@@ -36,5 +36,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("2合约方法返回值:", subtract)
+	fmt.Println("2合约方法返回值:{}", subtract)
 }
