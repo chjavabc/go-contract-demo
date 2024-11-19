@@ -20,7 +20,7 @@ func main() {
 	}
 
 	// 智能合约的地址
-	contractAddress := common.HexToAddress("15c7004D9B00825df1778b20BbC6Cf9586B9BF98")
+	contractAddress := common.HexToAddress("aa565f3d8CB7F5eAAaF73aA05Ef25f04BCF5734a")
 
 	// 初始化CrowdFunding合约
 	crowdFunding, err := part5.NewCrowdFund(contractAddress, client)
@@ -54,7 +54,7 @@ func main() {
 	}
 
 	//一定需要设置gas和上下文
-	auth.Value = big.NewInt(1000000000000000000)
+	auth.Value = big.NewInt(1)
 	auth.GasLimit = uint64(300000) // 设置合理的 Gas 限制
 	auth.GasPrice, err = client.SuggestGasPrice(context.Background())
 
