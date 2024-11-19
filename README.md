@@ -8,3 +8,7 @@
 
 
 /Users/chenhao/Downloads/web3/geth-alltools/abigen --abi Calculator.abi -type Calculator -pkg main -out calculator.go
+
+
+
+/Users/chenhao/Downloads/web3/geth-alltools/abigen --abi CrowdFunding.abi -type CrowdFund -pkg main -out CrowdFunding.go
